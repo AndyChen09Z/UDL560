@@ -14,13 +14,16 @@
       <div class="container mx-auto flex justify-between items-center">
         <a href="index.html" class="text-xl font-bold">Engaging Essay</a>
         <nav class="space-x-6">
-          <a href="index.html#courses" class="text-white-600 hover:text-purple-600 font-semibold transition">Courses</a>
+          <a href="#courses" class="text-white-600 hover:text-purple-600 font-semibold transition">Courses</a>
           <a href="persona.html" class="text-white-600 hover:text-purple-600 font-semibold transition">Persona Story</a>
-          <a href="index.html#ai-assistant" class="text-white-600 hover:text-purple-600 font-semibold transition">AI Assistant</a>
-          <a href="contact.html" class="text-white-600 hover:text-purple-600 font-semibold transition">Contact</a>
+          <a href="#ai-assistant" class="text-white-600 hover:text-purple-600 font-semibold transition">
+            📎 AI Assistant Guide
+          </a>
+          <a href="#contact" class="text-white-600 hover:text-purple-600 font-semibold transition">Contact</a>
         </nav>
       </div>
     </header>
+    
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-500 to-purple-400 text-white py-20 text-center">
@@ -43,30 +46,108 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
       <!-- Module 1 -->
-<div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 hover:scale-[1.01] hover:shadow-lg hover:border-gradient-to-r hover:from-blue-500 hover:to-purple-500 p-6" data-module>
-  <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
-    <div>
-      <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">1. U.S. Application Overview</h4>
-      <p class="module-subtitle text-sm text-gray-500 mt-1 hidden">Course Overview</p>
-    </div>
-    <svg class="w-5 h-5 transform transition-transform duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-    </svg>
-  </button>
-  <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-2 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Admissions logic and what officers value</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Application requirements: tests, GPA, rec letters</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Unique features of top U.S. colleges</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Overview of popular majors</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Strategy summary and Q&A</p>
-          <a href="#"
-          class="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow hover:scale-105 transform transition duration-300">
-         ▶️ Watch Video
-       </a>
-               </div>
+      <!-- Module 1 -->
+      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 p-6" data-module>
+        <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
+          <div>
+            <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">1. U.S. Application Overview</h4>
+            <p class="module-subtitle text-sm text-gray-500 mt-1 hidden">Course Overview</p>
+          </div>
+          <svg class="w-5 h-5 transform transition-transform duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- 展开内容 -->
+        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-4 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">
+          
+          <!-- 简要要点 -->
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Admissions logic and what officers value</li>
+            <li>Application requirements: tests, GPA, rec letters</li>
+            <li>Unique features of top U.S. colleges</li>
+            <li>Overview of popular majors</li>
+            <li>Strategy summary and Q&A</li>
+          </ul>
+
+          <!-- 视频 + 字幕上下排列 -->
+          <div class="flex flex-col gap-6 mt-6">
+            <!-- 视频播放器 -->
+            <video id="videoPlayer-module1" controls class="w-full rounded-lg shadow">
+              <source src="video/1usapplication.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- 字幕区域 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow text-sm max-h-[360px] overflow-y-auto space-y-4" id="subtitleContainer-module1">
+              <!-- 多段字幕块 -->
+              <div data-start="0" data-end="20">
+                <p class="font-semibold text-blue-600">0:00–0:20</p>
+                <p>Hello! This video is for students who want to go to college in the U.S.<br>
+                  Even if writing is hard, or you feel shy, or it’s hard to focus — your story matters.<br>
+                  Let’s look at how U.S. colleges read your application, and how you can show your strengths.</p>
+                <p class="text-gray-500 mt-1">你好！本视频是为想要申请美国大学的学生准备的。<br>
+                  即使写作对你来说很困难，或者你很害羞，或者难以集中注意力——你的故事仍然很重要。<br>
+                  我们将一起看看美国大学如何评估申请，以及你如何展示自己的优势。</p>
+              </div>
+
+              <div data-start="20" data-end="70">
+                <p class="font-semibold text-blue-600">0:20–1:10</p>
+                <p>U.S. colleges care about more than just your grades. They want to know: Who are you? What do you care about? How do you grow? You can show this in your essays, projects, and how you tell your story.</p>
+                <p class="text-gray-500 mt-1">美国大学不仅仅看成绩。他们想了解：你是谁？你关心什么？你是如何成长的？你可以通过文书、项目以及讲述你自己的方式来展示这些内容。</p>
+              </div>
+
+              <div data-start="70" data-end="120">
+                <p class="font-semibold text-blue-600">1:10–2:00</p>
+                <p>Most applications include: School grades, English test (like TOEFL), Letters from teachers, Personal essays, Activities (even helping family counts!). Not all schools ask for all things. Don’t worry — we can help.</p>
+                <p class="text-gray-500 mt-1">大多数申请包括：学校成绩、英语考试（如托福）、老师推荐信、个人文书、活动（即使是帮助家人也算！）。不是所有学校都要求全部内容。别担心——我们可以帮助你。</p>
+              </div>
+
+              <div data-start="120" data-end="160">
+                <p class="font-semibold text-blue-600">2:00–2:40</p>
+                <p>You don’t have to choose your major right away. You can try different classes. They support all kinds of students, including those with anxiety, ADHD, or language needs. You can learn by reading, building, or creating — your way.</p>
+                <p class="text-gray-500 mt-1">你不需要一开始就决定专业。你可以尝试不同的课程。学校支持各种学生，包括有焦虑、多动症或语言困难的学生。你可以用自己的方式学习——无论是阅读、动手还是创作。</p>
+              </div>
+
+              <div data-start="160" data-end="200">
+                <p class="font-semibold text-blue-600">2:40–3:20</p>
+                <p>Popular majors are: Engineering, Science, Psychology, Literature and Design. You can even make your own major. What you care about matters more than what it’s called.</p>
+                <p class="text-gray-500 mt-1">热门专业包括：工程、科学、心理学、文学与设计。你甚至可以自己设计专业。你关心什么，比专业名称更重要。</p>
+              </div>
+
+              <div data-start="200" data-end="270">
+                <p class="font-semibold text-blue-600">3:20–4:30</p>
+                <p>Start small. Pick a moment that changed you. Tell your story in your words. You don’t need to be perfect. Just be real. Ask for help if you need it. You are not alone.</p>
+                <p class="text-gray-500 mt-1">从小处开始。选择一个改变了你的时刻。用自己的语言讲述你的故事。你不需要完美，只要真实。需要帮助时请开口。你并不孤单。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- JS 同步脚本（可放到底部） -->
+      <script>
+        const video = document.getElementById("videoPlayer-module1");
+        const subtitles = document.querySelectorAll("#subtitleContainer-module1 > div");
+
+        video.addEventListener("timeupdate", () => {
+          const currentTime = video.currentTime;
+          subtitles.forEach(block => {
+            const start = parseFloat(block.dataset.start);
+            const end = parseFloat(block.dataset.end);
+            if (currentTime >= start && currentTime < end) {
+              block.classList.add("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            } else {
+              block.classList.remove("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            }
+          });
+        });
+      </script>
+
+
       <!-- Module 2 -->
-      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 hover:scale-[1.01] hover:shadow-lg hover:border-gradient-to-r hover:from-blue-500 hover:to-purple-500 p-6" data-module>
+      <!-- Module 2 -->
+      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 p-6" data-module>
         <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
           <div>
             <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">2. Essay Prompt Analysis</h4>
@@ -76,21 +157,105 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-2 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Leadership prompt strategies</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Writing about challenges and obstacles</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Community/Volunteer essays</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Talent highlight techniques</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Academic interest prompts</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Other personal story writing</p>
-          <a href="#"
-          class="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow hover:scale-105 transform transition duration-300">
-         ▶️ Watch Video
-       </a>
-               </div>
+
+        <!-- 展开内容 -->
+        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-4 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">
+          
+          <!-- 简要要点 -->
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Understand each type of essay prompt</li>
+            <li>Leadership, Challenge, Community, Talent, Academic, Personal</li>
+            <li>Write with honesty and specificity</li>
+          </ul>
+
+          <!-- 视频 + 字幕上下排列 -->
+          <div class="flex flex-col gap-6 mt-6">
+            <!-- 视频播放器 -->
+            <video id="videoPlayer-module2" controls class="w-full rounded-lg shadow">
+              <source src="video/2essayprompt.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- 字幕区域 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow text-sm max-h-[360px] overflow-y-auto space-y-4" id="subtitleContainer-module2">
+              <div data-start="0" data-end="40">
+                <p class="font-semibold text-blue-600">0:00–0:40</p>
+                <p>Hello again! In this video, we’ll talk about different kinds of essay prompts you may see on U.S. college applications.<br>
+                  We’ll help you understand each type — and how to write in a way that’s true to you.</p>
+                <p class="text-gray-500 mt-1">大家好！在这个视频中，我们将讲解美国大学申请中常见的文书题型。<br>
+                  我们会帮你理解每种题目类型——以及如何用真实的方式来写出你的故事。</p>
+              </div>
+
+              <div data-start="40" data-end="120">
+                <p class="font-semibold text-blue-600">0:40–2:00</p>
+                <p><strong>Leadership Prompts:</strong> These questions ask about a time when you led or made a difference...<br>Focus on what you did, why it mattered, and how it changed you.</p>
+                <p class="text-gray-500 mt-1"><strong>领导力题目：</strong> 这些题目会问你是否在某个时刻起到了带头作用或产生了影响。<br>重点在于你做了什么，为什么重要，以及你从中得到了什么成长。</p>
+              </div>
+
+              <div data-start="120" data-end="200">
+                <p class="font-semibold text-blue-600">2:00–3:20</p>
+                <p><strong>Challenge or Obstacle Prompts:</strong> These ask about a difficulty you’ve faced...<br>Focus on how you responded — what did you learn, how did you grow?</p>
+                <p class="text-gray-500 mt-1"><strong>挑战与障碍题目：</strong> 这些题目想知道你是否经历过困难。<br>重点是你如何应对——你学到了什么，怎样成长了？</p>
+              </div>
+
+              <div data-start="200" data-end="270">
+                <p class="font-semibold text-blue-600">3:20–4:30</p>
+                <p><strong>Community or Volunteer Essays:</strong> These ask about your role in helping others or being part of something bigger...<br>What did you give? What did you receive? How did it shape you?</p>
+                <p class="text-gray-500 mt-1"><strong>社区与志愿服务题目：</strong> 这些题目关注你是否参与了对他人或集体有意义的活动。<br>你付出了什么？得到了什么？这对你产生了怎样的影响？</p>
+              </div>
+
+              <div data-start="270" data-end="330">
+                <p class="font-semibold text-blue-600">4:30–5:30</p>
+                <p><strong>Talent or Passion Essays:</strong> These let you show something you’re great at...<br>Why does it matter to you? How has it helped you grow or connect?</p>
+                <p class="text-gray-500 mt-1"><strong>才艺与热情题目：</strong> 这类题目让你展示自己擅长或热爱的领域。<br>请讲故事：这项才艺对你意味着什么？它如何帮助你成长或与他人建立联系？</p>
+              </div>
+
+              <div data-start="330" data-end="400">
+                <p class="font-semibold text-blue-600">5:30–6:40</p>
+                <p><strong>Academic Interest Prompts:</strong> These ask why you want to study a specific subject...<br>Then show how you’ve followed that interest.</p>
+                <p class="text-gray-500 mt-1"><strong>学术兴趣题目：</strong> 这类题目会问你为什么对某个专业感兴趣。<br>然后讲讲你是如何延续这个兴趣的。</p>
+              </div>
+
+              <div data-start="400" data-end="450">
+                <p class="font-semibold text-blue-600">6:40–7:30</p>
+                <p><strong>Personal Story Essays:</strong> These are open-ended. You get to choose the story...<br>What changed you? What value do you carry now?</p>
+                <p class="text-gray-500 mt-1"><strong>个人故事题目：</strong> 这类题目较为开放，你可以自己选一个重要的经历来讲述。<br>什么事情改变了你？你现在最珍视的价值是什么？</p>
+              </div>
+
+              <div data-start="450" data-end="480">
+                <p class="font-semibold text-blue-600">7:30–8:00</p>
+                <p>Thanks for watching! Remember: you don’t need to impress — just be honest, thoughtful, and specific. Every student’s voice matters. Let your story lead the way.</p>
+                <p class="text-gray-500 mt-1">感谢观看！记住：你不需要炫耀，只需要真诚、有思考、具体表达。<br>每位学生的声音都值得被听见。让你的故事带你走得更远。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- JS 同步脚本（可放到底部） -->
+      <script>
+        const video2 = document.getElementById("videoPlayer-module2");
+        const subtitles2 = document.querySelectorAll("#subtitleContainer-module2 > div");
+
+        video2.addEventListener("timeupdate", () => {
+          const currentTime = video2.currentTime;
+          subtitles2.forEach(block => {
+            const start = parseFloat(block.dataset.start);
+            const end = parseFloat(block.dataset.end);
+            if (currentTime >= start && currentTime < end) {
+              block.classList.add("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            } else {
+              block.classList.remove("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            }
+          });
+        });
+      </script>
+
+
+
       <!-- Module 3 -->
-      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 hover:scale-[1.01] hover:shadow-lg hover:border-gradient-to-r hover:from-blue-500 hover:to-purple-500 p-6" data-module>
+      <!-- Module 3 -->
+      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 p-6" data-module>
         <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
           <div>
             <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">3. Essay Writing Techniques</h4>
@@ -100,18 +265,111 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-2 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Structuring: introduction, body, conclusion</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Grammar rules and common mistakes</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Style and expression tips</p>
-          <a href="#"
-          class="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow hover:scale-105 transform transition duration-300">
-         ▶️ Watch Video
-       </a>
-               </div>
+
+        <!-- 展开内容 -->
+        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-4 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">
+          
+          <!-- 简要要点 -->
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Structure: Hook, Body, Conclusion</li>
+            <li>Grammar: clear, simple, correct tense</li>
+            <li>Style: voice, variation, metaphor</li>
+          </ul>
+
+          <!-- 视频 + 字幕上下排列 -->
+          <div class="flex flex-col gap-6 mt-6">
+            <!-- 视频播放器 -->
+            <video id="videoPlayer-module3" controls class="w-full rounded-lg shadow">
+              <source src="video/3essaywriting.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- 字幕区域 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow text-sm max-h-[360px] overflow-y-auto space-y-4" id="subtitleContainer-module3">
+              <div data-start="0" data-end="40">
+                <p class="font-semibold text-blue-600">0:00–0:40</p>
+                <p>Welcome! In this short video, we’ll cover how to write a strong, clear essay for your U.S. college application.<br>
+                We’ll talk about structure, grammar, and style — all in simple steps.</p>
+                <p class="text-gray-500 mt-1">欢迎你！在本视频中，我们将讲解如何写出清晰、有力的美国大学申请文书。<br>
+                我们会一步步讲解结构、语法和表达技巧。</p>
+              </div>
+
+              <div data-start="40" data-end="90">
+                <p class="font-semibold text-blue-600">0:40–1:30</p>
+                <p><strong>1. Structure:</strong> A strong essay usually has three parts:<br>
+                - Introduction: Start with a hook...<br>
+                - Body: Explain what happened, how you felt, what you learned.<br>
+                - Conclusion: Tie it all together.</p>
+                <p class="text-gray-500 mt-1"><strong>1. 结构：</strong> 一篇好的文书通常包括三个部分：<br>
+                - 开头：用一个引人入胜的句子或瞬间作为“钩子”。<br>
+                - 正文：讲清楚发生了什么、你有什么感受、你学到了什么。<br>
+                - 结尾：总结，展示你的成长。</p>
+              </div>
+
+              <div data-start="90" data-end="150">
+                <p class="font-semibold text-blue-600">1:30–2:30</p>
+                <p><strong>2. Grammar and Common Mistakes:</strong><br>
+                - Keep sentences short and clear.<br>
+                - Use past tense for stories, present tense for reflections.<br>
+                - Avoid big words — clear is better than fancy.<br>
+                - Watch for errors: subject-verb agreement, run-ons, missing articles.</p>
+                <p class="text-gray-500 mt-1"><strong>2. 语法和常见错误：</strong><br>
+                - 句子简短明了。<br>
+                - 讲故事用过去式，表达感悟用现在式。<br>
+                - 清晰比华丽更重要。<br>
+                - 注意主谓一致、长句断句、冠词遗漏。</p>
+              </div>
+
+              <div data-start="150" data-end="210">
+                <p class="font-semibold text-blue-600">2:30–3:30</p>
+                <p><strong>3. Style and Voice Tips:</strong><br>
+                - Be yourself — voice matters more than grammar.<br>
+                - Use metaphors, details.<br>
+                - Vary sentence length.<br>
+                - Read aloud to check rhythm.</p>
+                <p class="text-gray-500 mt-1"><strong>3. 风格与表达建议：</strong><br>
+                - 做自己。你的声音比语法更重要。<br>
+                - 用比喻和细节让故事生动。<br>
+                - 混合长短句，读出节奏。<br>
+                - 大声朗读检查语感。</p>
+              </div>
+
+              <div data-start="210" data-end="240">
+                <p class="font-semibold text-blue-600">3:30–4:00</p>
+                <p>You don’t need to sound like a textbook. You just need to sound like you — thinking, growing, and ready to apply.<br>
+                You’ve got this. Let’s keep writing!</p>
+                <p class="text-gray-500 mt-1">你不需要像教科书一样写作。<br>
+                你只要像你自己——在思考、成长、准备申请的你。<br>
+                你可以做到的！继续写下去吧！</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- JS 同步脚本（放到底部） -->
+      <script>
+        const video3 = document.getElementById("videoPlayer-module3");
+        const subtitles3 = document.querySelectorAll("#subtitleContainer-module3 > div");
+
+        video3.addEventListener("timeupdate", () => {
+          const currentTime = video3.currentTime;
+          subtitles3.forEach(block => {
+            const start = parseFloat(block.dataset.start);
+            const end = parseFloat(block.dataset.end);
+            if (currentTime >= start && currentTime < end) {
+              block.classList.add("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            } else {
+              block.classList.remove("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            }
+          });
+        });
+      </script>
+
+
       <!-- Module 4 -->
-      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 hover:scale-[1.01] hover:shadow-lg hover:border-gradient-to-r hover:from-blue-500 hover:to-purple-500 p-6" data-module>
+      <!-- Module 4 -->
+      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 p-6" data-module>
         <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
           <div>
             <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">4. Applying for Scholarships</h4>
@@ -121,36 +379,108 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-2 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Types of scholarships</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Eligibility requirements</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Application process and tips</p>
-          <a href="#"
-          class="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow hover:scale-105 transform transition duration-300">
-         ▶️ Watch Video
-       </a>
-               </div>
+
+        <!-- 展开内容 -->
+        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-4 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">
+          
+          <!-- 简要要点 -->
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Types of scholarships: merit, need-based, identity-based</li>
+            <li>Who can apply & tips to qualify</li>
+            <li>How to apply effectively</li>
+          </ul>
+
+          <!-- 视频 + 字幕上下排列 -->
+          <div class="flex flex-col gap-6 mt-6">
+            <!-- 视频播放器 -->
+            <video id="videoPlayer-module4" controls class="w-full rounded-lg shadow">
+              <source src="video/4scholarship.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- 字幕区域 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow text-sm max-h-[360px] overflow-y-auto space-y-4" id="subtitleContainer-module4">
+              <div data-start="0" data-end="30">
+                <p class="font-semibold text-blue-600">0:00–0:30</p>
+                <p>Hi everyone! In this video, we’ll explain how to apply for scholarships — what types exist, who can apply, and how to make your application stand out.</p>
+                <p class="text-gray-500 mt-1">大家好！在本视频中，我们将讲解如何申请奖学金——有哪些类型，谁可以申请，以及如何让你的申请脱颖而出。</p>
+              </div>
+
+              <div data-start="30" data-end="90">
+                <p class="font-semibold text-blue-600">0:30–1:30</p>
+                <p><strong>1. Types of Scholarships:</strong><br>
+                - Merit-based<br>
+                - Need-based<br>
+                - Specific background<br>
+                - University scholarships</p>
+                <p class="text-gray-500 mt-1"><strong>1. 奖学金类型：</strong><br>
+                - 成绩型奖学金<br>
+                - 经济困难奖学金<br>
+                - 特定背景奖学金<br>
+                - 大学奖学金</p>
+              </div>
+
+              <div data-start="90" data-end="150">
+                <p class="font-semibold text-blue-600">1:30–2:30</p>
+                <p><strong>2. Who Can Apply?</strong><br>
+                - Many scholarships are open to international students!<br>
+                - Some require certain grades or activities<br>
+                - Match your background or goals<br>
+                - Always check the details</p>
+                <p class="text-gray-500 mt-1"><strong>2. 谁可以申请？</strong><br>
+                - 很多奖学金对国际学生开放！<br>
+                - 有些有成绩或活动要求<br>
+                - 寻找与你相符的项目<br>
+                - 一定要查看具体要求！</p>
+              </div>
+
+              <div data-start="150" data-end="210">
+                <p class="font-semibold text-blue-600">2:30–3:30</p>
+                <p><strong>3. How to Apply (Tips):</strong><br>
+                - Start early<br>
+                - Write a clear, honest statement<br>
+                - Ask for feedback<br>
+                - Track deadlines and links<br>
+                - Reuse essays with edits</p>
+                <p class="text-gray-500 mt-1"><strong>3. 如何申请（技巧）：</strong><br>
+                - 提前准备<br>
+                - 写清晰真诚的文书<br>
+                - 寻求反馈<br>
+                - 记录所有信息<br>
+                - 修改后重复使用文书</p>
+              </div>
+
+              <div data-start="210" data-end="240">
+                <p class="font-semibold text-blue-600">3:30–4:00</p>
+                <p>Scholarships are not just about money — they’re about belief in your potential. You’re worthy of that belief. Let’s go get it, together.</p>
+                <p class="text-gray-500 mt-1">奖学金不仅仅是经济支持，更是别人对你潜力的认可。<br>你值得被认可。让我们一起努力争取吧！</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Module 5 -->
-      <div class="group relative bg-white rounded-xl border border-transparent shadow transition-all duration-300 hover:scale-[1.01] hover:shadow-lg hover:border-gradient-to-r hover:from-blue-500 hover:to-purple-500 p-6" data-module>
-        <button class="w-full flex justify-between items-center text-left transition-all duration-300 module-button">
-          <div>
-            <h4 class="module-title text-2xl font-bold text-blue-700 transition-all duration-300">5. Write with AI Essay Assistant </h4>
-            <p class="module-subtitle text-sm text-gray-500 mt-1 hidden">Course Overview</p>
-          </div>
-          <svg class="w-5 h-5 transform transition-transform duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="module-content overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] text-sm space-y-2 mt-4 rounded-lg bg-gray-50 px-4 py-3 shadow-inner">          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> How to interact with the AI assistant</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> How to ask questions & get help</p>
-          <p class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-blue-500"></span> Navigating video segments via AI</p>
-          <a href="#"
-          class="inline-block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow hover:scale-105 transform transition duration-300">
-         ▶️ Watch Video
-       </a>
-               </div>
-      </div>
+      <!-- JS 同步脚本 -->
+      <script>
+        const video4 = document.getElementById("videoPlayer-module4");
+        const subtitles4 = document.querySelectorAll("#subtitleContainer-module4 > div");
+
+        video4.addEventListener("timeupdate", () => {
+          const currentTime = video4.currentTime;
+          subtitles4.forEach(block => {
+            const start = parseFloat(block.dataset.start);
+            const end = parseFloat(block.dataset.end);
+            if (currentTime >= start && currentTime < end) {
+              block.classList.add("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            } else {
+              block.classList.remove("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+            }
+          });
+        });
+      </script>
+
+
+
 
     </div>
   </div>
@@ -196,15 +526,62 @@
 
 
     <!-- AI Assistant -->
+    <!-- AI Assistant Section -->
     <section id="ai-assistant" class="py-16 bg-white">
       <div class="container mx-auto">
-        <h3 class="text-3xl font-bold mb-8 text-center">AI Essay Assistant Tutorial</h3>
-        <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
-          <video controls class="w-full md:w-1/2 rounded shadow">
-            <source src="intro-video.mp4" type="video/mp4" />
+        <h3 class="text-3xl font-bold mb-8 text-center">AI Essay Assistant Guide & Demo</h3>
+
+        <!-- 视频居中 + 宽度限制 -->
+        <div class="flex justify-center">
+          <video id="videoPlayer-ai" controls class="w-full max-w-3xl rounded-lg shadow">
+            <source src="video/aiassistant.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div class="bg-gray-100 p-6 rounded shadow w-full md:w-1/3">
+        </div>
+
+        <!-- 字幕区域 -->
+        <div class="mt-6 bg-gray-100 p-6 rounded-lg shadow text-sm max-w-3xl mx-auto max-h-[360px] overflow-y-auto space-y-4" id="subtitleContainer-ai">
+          <div data-start="0" data-end="40">
+            <p class="font-semibold text-blue-600">0:00–0:40</p>
+            <p>Hi, I’m Ben... especially if you come from a rural area.</p>
+            <p class="text-gray-500 mt-1">你好，我是Ben... 申请大学不容易，尤其是来自农村的学生。</p>
+          </div>
+          <div data-start="40" data-end="80">
+            <p class="font-semibold text-blue-600">0:40–1:20</p>
+            <p>This video series is for students who have big dreams...</p>
+            <p class="text-gray-500 mt-1">这个视频是为有梦想、但也许有些担忧的学生准备的。</p>
+          </div>
+          <div data-start="80" data-end="130">
+            <p class="font-semibold text-blue-600">1:20–2:10</p>
+            <p>You’ll meet students like Feng Lin... Every story is worth telling.</p>
+            <p class="text-gray-500 mt-1">你会看到像冯林这样的学生... 每一个故事都值得被讲述。</p>
+          </div>
+          <div data-start="130" data-end="180">
+            <p class="font-semibold text-blue-600">2:10–3:00</p>
+            <p>In each video, I’ll walk you through essays, scholarships...</p>
+            <p class="text-gray-500 mt-1">我会帮你逐步了解申请流程，用自己的方式讲述你的故事。</p>
+          </div>
+          <div data-start="180" data-end="210">
+            <p class="font-semibold text-blue-600">3:00–3:30</p>
+            <p>No matter where you’re starting from... Let's take it together.</p>
+            <p class="text-gray-500 mt-1">无论你起点在哪，你都属于这里。我们一起走下去。</p>
+          </div>
+        </div>
+
+        <!-- 使用说明 + 示例 -->
+        <div class="mt-10 bg-gray-100 p-6 rounded-lg shadow text-sm max-w-3xl mx-auto">
+          <h4 class="text-lg font-semibold text-indigo-700 mb-4">💡 How to Use the AI Assistant</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+            <li>Ask for help: <span class="italic text-gray-600">"Give me 3 ways to start a leadership essay."</span></li>
+            <li>Improve writing: <span class="italic text-gray-600">"Rewrite this paragraph to sound more confident."</span></li>
+            <li>Explore topics: <span class="italic text-gray-600">"I want to write about volunteering — any angles?"</span></li>
+          </ul>
+          <p class="text-gray-600">Click the 💬 button at the bottom left to open the mock chat bubble. (This is a demo – live interaction coming soon!)</p>
+        </div>
+
+        <!-- 模拟互动卡片 -->
+        <div class="mt-10 flex justify-center">
+          <div class="bg-gray-100 p-6 rounded shadow text-sm w-full max-w-sm">
             <p class="mb-2 font-semibold">You:</p>
             <p class="text-sm mb-4">Show me tips for writing about obstacles</p>
             <p class="mb-2 font-semibold">AI Assistant:</p>
@@ -215,22 +592,26 @@
       </div>
     </section>
 
-    <section class="bg-gray-100 py-10 px-6 md:px-20">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">Explore UDL Principles</h3>
-        <p class="text-gray-600 mb-6">
-          Our Engaging Essay program is built on Universal Design for Learning principles. Learn how we design for 
-          inclusivity and flexibility to serve all learners.
-        </p>
-        <a 
-          href="https://udlguidelines.cast.org" 
-          target="_blank" 
-          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl text-lg font-medium hover:bg-indigo-700 transition"
-        >
-          🔎 Explore the UDL Framework
-        </a>
-      </div>
-    </section>
+    <!-- JS 同步字幕脚本 -->
+    <script>
+      const videoAI = document.getElementById("videoPlayer-ai");
+      const subtitlesAI = document.querySelectorAll("#subtitleContainer-ai > div");
+
+      videoAI.addEventListener("timeupdate", () => {
+        const currentTime = videoAI.currentTime;
+        subtitlesAI.forEach(block => {
+          const start = parseFloat(block.dataset.start);
+          const end = parseFloat(block.dataset.end);
+          if (currentTime >= start && currentTime < end) {
+            block.classList.add("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+          } else {
+            block.classList.remove("bg-yellow-100", "border-l-4", "border-yellow-400", "pl-2");
+          }
+        });
+      });
+    </script>
+
+
     
 
     <!-- Footer -->
